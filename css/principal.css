@@ -3,6 +3,73 @@
     src: url(/img/font/Hitchcut-Regular.ttf);
 }
 
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -22,17 +89,19 @@ body{
 }
 
 #menu{
+
     width: 900px;
     height: 50px;
     align-items: center;
     position: fixed;
     top: 440px;
+
 }
 
 #menu ul{
     
     list-style-type: none;
-    margin: 0;
+    margin-left: 10px;
     padding: 0;
     width: 100%;
     
@@ -45,7 +114,6 @@ body{
     float: left;
     border-radius: 5px;
     
-
 }
 
 #menu li a {
@@ -61,8 +129,11 @@ body{
 
 #menu a:hover{
 
-    background-color: rgba(44, 108, 160, 0.74);
-    border-radius: 5px;
     color: black;
+    transition:all 0.3s ease;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 
 }
