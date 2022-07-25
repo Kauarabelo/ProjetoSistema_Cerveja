@@ -1,20 +1,26 @@
-import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CardapioComponent } from './cardapio/cardapio.component';
 import { MenuComponent } from './menu/menu.component';
+import { ProductDetailsComponent } from './cardapio/product-details/product-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardapioComponent,
-    MenuComponent
+    MenuComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path: '', },
+      {path: 'products/:productId', component: ProductDetailsComponent}
+    ])
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

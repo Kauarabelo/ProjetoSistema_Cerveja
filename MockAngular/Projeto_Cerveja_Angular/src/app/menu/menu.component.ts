@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import {PageCardapio} from '../cardapio'
 
 @Component({
   selector: 'app-menu',
