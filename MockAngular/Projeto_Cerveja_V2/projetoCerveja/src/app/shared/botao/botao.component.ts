@@ -8,7 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BotaoComponent implements OnInit {
 
   @Input() public texto?: string;
-  @Input() public cor?: string = 'primaria';
+  @Input() public cor: string = 'primaria';
+  @Input() public classeCss: string = '';
+  @Input() public tipo: string = 'button';
+  @Input() public desabilitar: boolean = false;
 
   constructor() { }
 

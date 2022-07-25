@@ -4,10 +4,27 @@
 :root {
 
     --fontRegular: 'Hitchcut-Regular';
-    --colorAmarelo: #F5AD11;
-    --colorPreto: #000000;
-    --colorBranco: #FFFFFF;
-    --colorCadastro: #A73636;
+    --fontPrimaria: 'Ubuntu-Light';
 
+    // Cores principais
+    --corAmarelo: #F5AD11;
+    --corPreto: #000000;
+    --corBranco: #FFFFFF;
+    --corCadastro: #A73636;
+
+
+}
+
+* {
+
+   font-family: var(--fontPrimaria);
+    font-size: 14px;
+
+}
+
+html, body {
+
+    height: 100%;
+    margin:0;
 
 }

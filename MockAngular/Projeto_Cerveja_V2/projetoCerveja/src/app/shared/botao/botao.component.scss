@@ -1,0 +1,49 @@
+@mixin botaoPrimario {
+    
+    color: var(--corBranco);
+    background-color: var(--corPreto);
+
+}
+
+@mixin botaoOutline {
+    
+    background-color: var(--corBranco);
+    color: var(--corPreto);
+    border: 2px solid var(--corPreto);
+
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &.primaria{
+
+        @include botaoPrimario();
+
+        &:hover {
+
+            @include botaoOutline;
+
+        }
+    }
+
+    &.outline{
+
+        @include botaoOutline();
+
+        &:hover {
+
+            @include botaoPrimario;
+
+        }
+    }
+
+    &:disabled {
+
+        opacity: 70%;
+
+    }
+}
