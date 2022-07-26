@@ -11,6 +11,7 @@ export class UploadImagemComponent implements OnInit {
   @Input() public formControl?: AbstractControl;
   @Input() public classeCssContainer: string = '';
   @Input() public imagemPrevisualizacao?: string;
+  @Input() public referenciaFormulario?: AbstractControl;
   @Input() public classeCssImagemPrevisualizacao?: string = '';
   @Output() public aoAtualizarImagem: EventEmitter<string> = new EventEmitter();
   
