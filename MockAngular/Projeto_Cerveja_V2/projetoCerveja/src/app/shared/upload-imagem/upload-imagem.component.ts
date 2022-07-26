@@ -9,7 +9,7 @@ import { AbstractControl } from '@angular/forms';
 export class UploadImagemComponent implements OnInit {
 
   @Input() public formControl?: AbstractControl;
-  @Input() public classeCssContainer?: string;
+  @Input() public classeCssContainer: string = '';
   @Input() public imagemPrevisualizacao?: string;
   @Input() public classeCssImagemPrevisualizacao?: string = '';
   @Output() public aoAtualizarImagem: EventEmitter<string> = new EventEmitter();
@@ -20,7 +20,6 @@ export class UploadImagemComponent implements OnInit {
   }
 
   public trocarArquivo(event: any): void {
-
     if (event.target.files && event.target.files.length){
       const [arquivo] = event.target.files;
 
