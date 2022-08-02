@@ -21,41 +21,36 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-
 /**
  *
  * @author devsys-b
  */
-
 @RestController
 @RequestMapping("/clientes")
 public class ClienteControler {
-    
+
     @Autowired
-    private ClienteRepository clienteRepository; 
-    
+    private ClienteRepository clienteRepository;
+
     @GetMapping
-    public List<Cliente> listar(){
+    public List<Cliente> listar() {
         return clienteRepository.findAll();
     }
-    
+
     @GetMapping("/{clienteid}")
-    public ResponseEntity<Cliente> listaId(@PathVariable Long clienteid){
-        Optional <Cliente> cliente = clienteRepository.findById(clienteid);
-        
-        if(cliente.isPresent()){
+    public ResponseEntity<Cliente> listaId(@PathVariable Long clienteid) {
+        Optional<Cliente> cliente = clienteRepository.findById(clienteid);
+
+        if (cliente.isPresent()) {
             return ResponseEntity.ok(cliente.get());
-        }else{
+        } else {
             return ResponseEntity.notFound().build();
         }
     }
-    
+
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Cliente criar(@Valid @RequestBody Cliente cliente){
+    public Cliente criar(@Valid @RequestBody Cliente cliente) {
         return clienteRepository.save(cliente);
     }
 }
-
-  
-
