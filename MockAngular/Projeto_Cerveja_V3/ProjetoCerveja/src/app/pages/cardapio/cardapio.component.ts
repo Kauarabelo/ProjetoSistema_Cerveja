@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OrderDetailsService } from 'src/app/services/order-details.service';
 
 @Component({
   selector: 'app-cardapio',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cardapio.component.scss']
 })
 export class CardapioComponent implements OnInit {
-
-  constructor() { }
-
+  
+  constructor(private service:OrderDetailsService) { }
+  itemData: any;
+  
   ngOnInit(): void {
+    this.itemData = this.service.itemDetails;
   }
 
 }

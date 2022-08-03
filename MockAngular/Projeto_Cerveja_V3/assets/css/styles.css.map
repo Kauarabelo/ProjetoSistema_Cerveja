@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,aAAa,CAAA,QAAC;EACd,YAAY,CAAA,QAAC;CACd;;AAED,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CAEV;;AAED,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,4BAA4B;CAC1C;;AAGD,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "../../ProjetoCerveja/src/styles.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

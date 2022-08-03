@@ -1,1 +1,15 @@
-<p>carrinho works!</p>
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">Finalizar Pedido<br></h1>
+    <div class="row">
+      <div class="col-lg-6" *ngIf="CarrinhoData">
+        <div class="itembox">
+          <img src="{{CarrinhoData[0].itemImg}}" width="100%"/>
+          <h1>{{CarrinhoData[0].itemName}}</h1>
+          <p>{{CarrinhoData[0].itemDetails}}</p>
+          <p>{{CarrinhoData[0].itemPrice | currency:'BRL'}}</p>
+          <a [routerLink]="['/carrinho',CarrinhoData[0].id]" class="btn_pedido d-flex justify-content-center"> Fazer pedido <i class="bi bi-bag-fill arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../ProjetoCerveja/src/app/pages/contato/contato.component.scss"
+    ],
+    "names": [],
+    "file": "contato.component.css"
+}

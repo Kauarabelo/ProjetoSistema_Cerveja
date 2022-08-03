@@ -1,0 +1,14 @@
+.navbar-nav .nav-link.active-link {
+  color: var(--corPrimaria);
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.navbar-brand img {
+  width: 70px;
+  border-radius: 20px;
+}
+/*# sourceMappingURL=navebar.component.css.map */

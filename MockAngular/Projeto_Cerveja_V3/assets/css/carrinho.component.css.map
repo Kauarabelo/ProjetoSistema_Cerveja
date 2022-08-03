@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../ProjetoCerveja/src/app/pages/carrinho/carrinho.component.scss"
+    ],
+    "names": [],
+    "file": "carrinho.component.css"
+}
