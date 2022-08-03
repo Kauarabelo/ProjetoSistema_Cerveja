@@ -1,0 +1,97 @@
+<div class="container mt-5 mb-5">
+
+  <img src="" width="100%" />
+
+  <h1 class="text-center">Sobre o Projeto</h1>
+
+  <p>
+    <br><b>1 - Introdução</b><br><br>
+
+    A Fast-and-Furios-Food, franquia de trailers de lanches no mercado há mais de 30 anos,
+    necessita implantar um sistema de controle de vendas integrado com a cozinha e entrega do
+    pedido.
+    Conhecida no mercado como a mais “rápida do oeste”, os lanches ficam prontos em média de
+    14 minutos a partir da confirmação do pedido.
+    A princípio, a empresa não pretende controlar estoque de produtos.
+    <br>
+
+    <br><b>2 - Escopo</b><br><br>
+
+    Em entrevista, o gerente da franquia explica qual é o fluxo de trabalho de seus trailers:
+    1. No caixa, o cliente chega e realiza o pedido, onde também já realiza o pagamento.
+    2. Assim que o pedido é recebido pelo caixa, aparece na tela do chapeiro (área de
+    preparo) o pedido/produtos que necessitam de preparação. Quando pronto o
+    funcionário clica no pedido para mudar seu status, encaminhando-o para a área de
+    entrega.
+    3. Na tela da entrega o funcionário adiciona as bebidas (caso tenha), arruma a bandeja e
+    libera para ser retirado pelo cliente.
+    Para cada etapa acima foram dadas algumas considerações específicas, a saber:
+    <br>
+
+    <br><b>2.1 - Área de Caixa</b><br><br>
+
+    O cliente pode realizar o pedido diretamente no caixa ou utilizando um totem touch,
+    disponibilizado na frente do trailer. O cliente recebe um ticket com um número sequencial do
+    pedido.
+    <br>
+
+    <br><b>2.2 - Área de preparo</b><br><br>
+
+    A área de preparo é dotada de um monitor touch com caneta, informando quais produtos o
+    funcionário deve preparar. Não podem haver distrações nessa etapa, e o monitor fica um
+    pouco afastado do funcionário, mas dentro do campo de visão. Além disso deve dispor de
+    alertas visuais para que identifique se o tempo de preparo está prestes a vencer. Uma vez que
+    o funcionário clicar em cima do pedido, deve encaminhá-lo para a área de finalização e
+    entrega.
+    <br>
+
+    <br><b>2.3 - Área de finalização e entrega </b><br><br>
+
+    Esta área dispõe de um tablet, que fica mais próximo do funcionário. Aqui é separado os
+    produtos extras do pedido (bebida, guardanapos, canudinhos, etc), arrumada a bandeja, libera
+    a entrega e um dispositivo eletrônico chama o cliente pelo número do seu pedido.
+    <br>
+
+    <br><b>2.4 - Sistema Mobile – Peça e Retire </b><br><br>
+
+    A empresa pretende implementar um app para atender melhor seus clientes. O aplicativo
+    deverá ser capaz de realizar um pedido e ser avisado se está pronto e se pode ser retirado ou
+    não.
+    <br>
+
+    <br><b>3 - Entrega</b><br><br>
+
+    O projeto deverá ser entregue/disponibilizado no GitHUB.
+    <br>
+    <br><b>4 - Observações</b><br><br>
+
+    Dúvidas relacionadas a regra de negócio devem ser questionadas à empresa.
+
+  </p>
+
+  <form class="col-lg-8">
+    <div class="row">
+      <div class=" col-lg-6 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Digite seu Nome">
+      </div>
+      <div class=" col-lg-6 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Digite seu Sobrenome">
+      </div>
+      <div class=" col-lg-6 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Digite seu Telefone">
+      </div>
+      <div class=" col-lg-6 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Digite seu Email">
+      </div>
+      <div class=" col-lg-12 mt-2 mb-2">
+        <textarea class="form-control" placeholder="Observação"></textarea>
+      </div>
+      <a routerLink="" class="btn btn-md btn-danger mt-3"><i class="bi bi-arrow-left"></i> Cancelar
+      </a>
+      <button class="btn btn-md btn-success mt-3 float-end"> Enviar <i class="bi bi-bag-fill arrow-right"></i></button>
+    </div>
+
+
+  </form>
+
+</div>

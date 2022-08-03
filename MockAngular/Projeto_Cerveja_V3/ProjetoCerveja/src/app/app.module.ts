@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavebarComponent } from './sharepage/navebar/navebar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ContatoComponent } from './pages/contato/contato.component';
+import { SobreComponent } from './pages/sobre/sobre.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 import { StatusComponent } from './pages/status/status.component';
@@ -18,7 +18,7 @@ import { LoginComponent } from './pages/login/login.component';
     NavebarComponent,
     FooterComponent,
     HomeComponent,
-    ContatoComponent,
+    SobreComponent,
     CardapioComponent,
     CarrinhoComponent,
     StatusComponent,
