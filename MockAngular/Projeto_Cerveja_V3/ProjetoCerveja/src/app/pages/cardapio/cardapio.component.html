@@ -1,15 +1,19 @@
 <div class="container mt-5 mb-5">
-    <h1 class="text-center">Itens<br></h1>
-    <div class="row">
-      <div class="col-lg-4" *ngFor="let iD of itemData">
-        <div class="itembox">
-          <img src="{{iD.itemImg}}" class="img-thumbnail" width="100%" height="100%"/>
-          <h1>{{iD.itemName}}</h1>
-          <p>{{iD.itemDetails}}</p>
-          <p>{{iD.itemPrice | currency:'BRL'}}</p>
-          <a [routerLink]="['/carrinho',iD.id]" class="btn_pedido d-flex justify-content-center"> Fazer pedido <i class="bi bi-bag-fill arrow-right"></i></a>
+  <h1 class="text-center">Itens<br></h1>
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let iD of itemData">
+      <div class="itembox">
+        <img src="{{iD.itemImg}}" class="img-thumbnail" width="100%" height="100%" />
+        <h1>{{iD.itemName}}</h1>
+        <p>{{iD.itemDetails}}</p>
+        <p>{{iD.itemPrice | currency:'BRL'}}</p>
+        <div class="d flex">
+          <a [routerLink]="['/carrinho',iD.id]" class="btn_pedido d flex justify-content-center"> Fazer pedido <i
+              class="bi bi-bag-fill arrow-right"></i></a>
+          <a [routerLink]="['/carrinho',iD.id]" class="btn_pedido d flex justify-content-center"> Adiconar a Sacola <i
+              class="bi bi-bag-fill arrow-right"></i></a>
         </div>
       </div>
     </div>
   </div>
-
+</div>
