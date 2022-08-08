@@ -8,10 +8,7 @@
         <p>{{iD.itemDetails}}</p>
         <p>{{iD.itemPrice | currency:'BRL'}}</p>
         <div class="d flex">
-          <a [routerLink]="['/carrinho',iD.id]" class="btn_pedido d flex justify-content-center"> Fazer pedido <i
-              class="bi bi-bag-fill arrow-right"></i></a>
-          <a [routerLink]="['/carrinho',iD.id]" class="btn_pedido d flex justify-content-center"> Adiconar a Sacola <i
-              class="bi bi-bag-fill arrow-right"></i></a>
+          <a [routerLink]="['/carrinho',iD.id]" class="btn_pedido d-flex justify-content-center"> Fazer pedido <i class="bi bi-bag-fill arrow-right"></i></a>
         </div>
       </div>
     </div>
