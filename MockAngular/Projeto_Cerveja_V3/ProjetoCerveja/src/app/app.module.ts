@@ -11,6 +11,7 @@ import { CardapioComponent } from './pages/cardapio/cardapio.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 import { StatusComponent } from './pages/status/status.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ClienteComponent } from './pages/cliente/cliente/cliente.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LoginComponent } from './pages/login/login.component';
     CardapioComponent,
     CarrinhoComponent,
     StatusComponent,
-    LoginComponent
+    LoginComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,

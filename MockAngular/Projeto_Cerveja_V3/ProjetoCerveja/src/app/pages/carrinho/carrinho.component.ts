@@ -1,8 +1,10 @@
+import { ClienteModel } from './../cliente/cliente/cliente.model';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { VirtualTimeScheduler } from 'rxjs';
 import { OrderDetailsService } from 'src/app/services/order-details.service';
 import { __values } from 'tslib';
+
 
 @Component({
   selector: 'app-carrinho',
@@ -24,6 +26,14 @@ export class CarrinhoComponent implements OnInit {
 
       })
     }
+  }
+
+  clienteList: ClienteModel[] = [];
+
+  enviar(): void {
+      
+      this.clienteList.push({this.nome});
+      
   }
 
 }
