@@ -8,10 +8,10 @@ export class ClienteServiceService {
 
   constructor() { }
 
-  itemDetails: ClienteModel[] = [
+  // itemDetails: ClienteModel[] = [
 
-    new ClienteModel ({},{},{})
+    // new ClienteModel ({},{},{})
 
-  ]
+  // ]
 
 }
