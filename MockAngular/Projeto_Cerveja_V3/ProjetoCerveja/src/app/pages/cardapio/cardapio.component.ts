@@ -15,4 +15,5 @@ export class CardapioComponent implements OnInit {
     this.itemData = this.service.itemDetails;
   }
 
+
 }
