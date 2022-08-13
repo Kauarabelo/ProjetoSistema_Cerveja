@@ -36,7 +36,7 @@ public class PedidoControler {
         return pedidoRepository.findAll();
     }
     
-    @PostMapping("/teste")
+    @PostMapping("/pedido")
     @ResponseStatus(HttpStatus.CREATED)
     public Pedido criar(@RequestBody Pedido pedido){
         return pedidoService.criar(pedido);

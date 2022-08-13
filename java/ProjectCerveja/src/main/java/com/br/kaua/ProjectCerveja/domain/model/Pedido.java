@@ -5,7 +5,6 @@
  */
 package com.br.kaua.ProjectCerveja.domain.model;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,7 +15,7 @@ import javax.validation.constraints.NotBlank;
 
 /**
  *
- * @author devsys-a
+ * @author devsys-b
  */
 @Entity
 public class Pedido {
