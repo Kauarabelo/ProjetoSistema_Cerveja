@@ -1,3 +1,4 @@
+import { ClienteComponent } from './pages/cliente/cliente/cliente.component';
 import { StatusComponent } from './pages/status/status.component';
 import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 import { CardapioComponent } from './pages/cardapio/cardapio.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path:'carrinho/:id', component: CarrinhoComponent},
   { path:'carrinho', component: CarrinhoComponent},
   { path:'status', component: StatusComponent},
+  { path:'cliente', component: ClienteComponent},
 ];
 
 @NgModule({

@@ -1,8 +1,6 @@
-import { __values } from 'tslib';
 import { ActivatedRoute } from '@angular/router';
 import { ClienteModel } from './../cliente/cliente/cliente.model';
 import { Component, OnInit } from '@angular/core';
-import { VirtualTimeScheduler } from 'rxjs';
 import { OrderDetailsService } from 'src/app/services/order-details.service';
 
 

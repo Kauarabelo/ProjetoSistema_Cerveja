@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-lg-6" *ngIf="CarrinhoData">
 
-      <img src="{{CarrinhoData[0].itemImg}}" class="img-fluid" width="100%" />
+      <img src="{{CarrinhoData[0].itemImg}}" class="img-fluid" width="100%" alt="" />
       <h1>{{CarrinhoData[0].itemName}}</h1>
       <p>{{CarrinhoData[0].itemDetails}}</p>
       <p>{{CarrinhoData[0].itemPrice | currency:'BRL'}}</p>

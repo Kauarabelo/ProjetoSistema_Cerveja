@@ -12,6 +12,8 @@ import { CarrinhoComponent } from './pages/carrinho/carrinho.component';
 import { StatusComponent } from './pages/status/status.component';
 import { LoginComponent } from './pages/login/login.component';
 import { ClienteComponent } from './pages/cliente/cliente/cliente.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { ClienteComponent } from './pages/cliente/cliente/cliente.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
