@@ -28,14 +28,18 @@ public class Produto {
 
     @NotBlank
     private BigDecimal valor_unitario;
+    
+    @NotBlank
+    private int qtd;
 
     public Produto() {
     }
 
-    public Produto(Long id, String descricao, BigDecimal valor_unitario) {
+    public Produto(Long id, String descricao, BigDecimal valor_unitario, int qtd) {
         this.id = id;
         this.descricao = descricao;
         this.valor_unitario = valor_unitario;
+        this.qtd = qtd;
     }
 
     public Long getId() {
@@ -60,6 +64,14 @@ public class Produto {
 
     public void setValor_unitario(BigDecimal valor_unitario) {
         this.valor_unitario = valor_unitario;
+    }
+    
+    public int getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(int qtd) {
+        this.qtd = qtd;
     }
 
 }

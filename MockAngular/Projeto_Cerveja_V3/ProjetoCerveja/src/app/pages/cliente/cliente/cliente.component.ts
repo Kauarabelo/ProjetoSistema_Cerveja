@@ -22,9 +22,7 @@ export class ClienteComponent implements OnInit {
       next: (response: ClienteModel) => {
         this.clientes.push(response);
       },
-      error: HttpErrorResponse => {
-        alert(error.message);
-      }
+
     })
 
   }
