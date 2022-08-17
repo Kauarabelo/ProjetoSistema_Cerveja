@@ -6,11 +6,16 @@
 package com.br.kaua.ProjectCerveja.domain.model;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotBlank;
 
 /**
@@ -27,9 +32,6 @@ public class Pedido {
     @ManyToOne
     private Cliente cliente;
 
-    @ManyToOne
-    private Item item;
-
     private String obs;
 
     private StatusPedido status;
@@ -37,18 +39,23 @@ public class Pedido {
     @NotBlank
     private LocalDateTime data_hora_pedido;
     private LocalDateTime data_hora_entrega;
+    
+    @OneToMany(cascade=CascadeType.ALL)
+    @JoinColumn(name = "pedido_id", referencedColumnName = "id")
+    private List<Item> itens = new ArrayList<>();
+    
 
     public Pedido() {
     }
 
-    public Pedido(Long id, Cliente cliente, Item item, StatusPedido status, String obs, LocalDateTime data_hora_pedido, LocalDateTime data_hora_entrega) {
+    public Pedido(Long id, Cliente cliente, StatusPedido status, String obs, LocalDateTime data_hora_pedido, LocalDateTime data_hora_entrega, List<Item> itens) {
         this.id = id;
         this.cliente = cliente;
-        this.item = item;
         this.status = status;
         this.obs = obs;
         this.data_hora_pedido = data_hora_pedido;
         this.data_hora_entrega = data_hora_entrega;
+        this.itens = itens;
     }
 
     public Cliente getCliente() {
@@ -57,14 +64,6 @@ public class Pedido {
 
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
-    }
-
-    public Item getItem() {
-        return item;
-    }
-
-    public void setItem(Item item) {
-        this.item = item;
     }
 
     public StatusPedido getStatus() {
@@ -105,6 +104,14 @@ public class Pedido {
 
     public void setData_hora_entrega(LocalDateTime data_hora_entrega) {
         this.data_hora_entrega = data_hora_entrega;
+    }
+    
+    public List<Item> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<Item> itens) {
+        this.itens = itens;
     }
 
     @Override

@@ -8,6 +8,7 @@ package com.br.kaua.ProjectCerveja.api.controller;
 import com.br.kaua.ProjectCerveja.domain.model.Produto;
 import com.br.kaua.ProjectCerveja.domain.repository.ProdutoRepository;
 import java.util.List;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,7 +36,7 @@ public class ProdutoControler {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Produto adionarProduto(@RequestBody Produto produto) {
+    public Produto adionarProduto(@Valid @RequestBody Produto produto) {
         return produtoRepository.save(produto);
     }
     

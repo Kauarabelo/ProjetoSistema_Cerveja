@@ -25,13 +25,13 @@ public class Item {
     private Long id;
 
     @ManyToOne
-    private Produto id_produto;
+    private Produto produto;
     
-    @ManyToOne
-    private Produto id_pedido;
+//    @ManyToOne
+//    private Produto id_pedido;
 
     @NotBlank
-    private BigDecimal qtd;
+    private BigDecimal quantidade;
 
     private String obs;
 
@@ -43,9 +43,9 @@ public class Item {
 
     public Item(Long id, Produto id_produto, Produto id_pedido, BigDecimal qtd, String obs, BigDecimal valor_unitario) {
         this.id = id;
-        this.id_produto = id_produto;
-        this.id_pedido = id_pedido;
-        this.qtd = qtd;
+        this.produto = id_produto;
+//        this.id_pedido = id_pedido;
+        this.quantidade = qtd;
         this.obs = obs;
         this.valor_unitario = valor_unitario;
     }
@@ -59,27 +59,27 @@ public class Item {
     }
 
     public Produto getId_produto() {
-        return id_produto;
+        return produto;
     }
 
     public void setId_produto(Produto id_produto) {
-        this.id_produto = id_produto;
+        this.produto = id_produto;
     }
 
-    public Produto getId_pedido() {
-        return id_pedido;
-    }
-
-    public void setId_pedido(Produto id_pedido) {
-        this.id_pedido = id_pedido;
-    }
+//    public Produto getId_pedido() {
+//        return id_pedido;
+//    }
+//
+//    public void setId_pedido(Produto id_pedido) {
+//        this.id_pedido = id_pedido;
+//    }
 
     public BigDecimal getQtd() {
-        return qtd;
+        return quantidade;
     }
 
     public void setQtd(BigDecimal qtd) {
-        this.qtd = qtd;
+        this.quantidade = qtd;
     }
 
     public String getObs() {
